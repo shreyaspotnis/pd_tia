@@ -1,1 +1,351 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:all_components
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ED2610 U1
+U 1 1 58C031F9
+P 1600 1600
+F 0 "U1" H 1600 1500 60  0000 C CNN
+F 1 "ED2610" H 1600 1400 60  0000 C CNN
+F 2 "" H 1600 1600 60  0000 C CNN
+F 3 "" H 1600 1600 60  0000 C CNN
+	1    1600 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 58C0327B
+P 2200 1400
+F 0 "C1" H 2225 1500 50  0000 L CNN
+F 1 "10uF" H 2225 1300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2238 1250 50  0001 C CNN
+F 3 "" H 2200 1400 50  0000 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 58C03337
+P 2850 1400
+F 0 "C4" H 2875 1500 50  0000 L CNN
+F 1 "0.1uF" H 2875 1300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2888 1250 50  0001 C CNN
+F 3 "" H 2850 1400 50  0000 C CNN
+	1    2850 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 58C03418
+P 2350 1200
+F 0 "#FLG2" H 2350 1295 50  0001 C CNN
+F 1 "PWR_FLAG" H 2350 1380 50  0000 C CNN
+F 2 "" H 2350 1200 50  0000 C CNN
+F 3 "" H 2350 1200 50  0000 C CNN
+	1    2350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG3
+U 1 1 58C0343C
+P 2350 2000
+F 0 "#FLG3" H 2350 2095 50  0001 C CNN
+F 1 "PWR_FLAG" H 2350 2180 50  0000 C CNN
+F 2 "" H 2350 2000 50  0000 C CNN
+F 3 "" H 2350 2000 50  0000 C CNN
+	1    2350 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 58C036F3
+P 1950 2000
+F 0 "#FLG1" H 1950 2095 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2180 50  0000 C CNN
+F 2 "" H 1950 2000 50  0000 C CNN
+F 3 "" H 1950 2000 50  0000 C CNN
+	1    1950 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +15V #PWR3
+U 1 1 58C0379C
+P 2750 1200
+F 0 "#PWR3" H 2750 1050 50  0001 C CNN
+F 1 "+15V" H 2750 1340 50  0000 C CNN
+F 2 "" H 2750 1200 50  0000 C CNN
+F 3 "" H 2750 1200 50  0000 C CNN
+	1    2750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L -15V #PWR2
+U 1 1 58C037BC
+P 2700 2050
+F 0 "#PWR2" H 2700 2150 50  0001 C CNN
+F 1 "-15V" H 2700 2200 50  0000 C CNN
+F 2 "" H 2700 2050 50  0000 C CNN
+F 3 "" H 2700 2050 50  0000 C CNN
+	1    2700 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 58C03A65
+P 2000 1650
+F 0 "#PWR1" H 2000 1400 50  0001 C CNN
+F 1 "GND" H 2000 1500 50  0000 C CNN
+F 2 "" H 2000 1650 50  0000 C CNN
+F 3 "" H 2000 1650 50  0000 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2940 U2
+U 1 1 58C03B99
+P 4150 1750
+F 0 "U2" H 4150 2350 60  0000 C CNN
+F 1 "LM2940" H 4150 1400 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 4150 1750 60  0001 C CNN
+F 3 "" H 4150 1750 60  0000 C CNN
+	1    4150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR4
+U 1 1 58C03C50
+P 3350 1600
+F 0 "#PWR4" H 3350 1450 50  0001 C CNN
+F 1 "+15V" H 3350 1740 50  0000 C CNN
+F 2 "" H 3350 1600 50  0000 C CNN
+F 3 "" H 3350 1600 50  0000 C CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58C03E87
+P 2200 1800
+F 0 "C2" H 2225 1900 50  0000 L CNN
+F 1 "10uF" H 2225 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2238 1650 50  0001 C CNN
+F 3 "" H 2200 1800 50  0000 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 58C03EE8
+P 2850 1800
+F 0 "C5" H 2875 1900 50  0000 L CNN
+F 1 "0.1uF" H 2875 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2888 1650 50  0001 C CNN
+F 3 "" H 2850 1800 50  0000 C CNN
+	1    2850 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 58C03F18
+P 2550 1600
+F 0 "C3" H 2575 1700 50  0000 L CNN
+F 1 "0.1uF" H 2575 1500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2588 1450 50  0001 C CNN
+F 3 "" H 2550 1600 50  0000 C CNN
+	1    2550 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 58C03F4F
+P 3350 1850
+F 0 "C6" H 3350 1950 50  0000 L CNN
+F 1 "10uF" H 3350 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3388 1700 50  0001 C CNN
+F 3 "" H 3350 1850 50  0000 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 58C04081
+P 3350 2100
+F 0 "#PWR5" H 3350 1850 50  0001 C CNN
+F 1 "GND" H 3350 1950 50  0000 C CNN
+F 2 "" H 3350 2100 50  0000 C CNN
+F 3 "" H 3350 2100 50  0000 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 58C040B1
+P 3700 1850
+F 0 "C7" H 3600 1750 50  0000 L CNN
+F 1 "0.1uF" H 3500 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3738 1700 50  0001 C CNN
+F 3 "" H 3700 1850 50  0000 C CNN
+	1    3700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 58C04900
+P 4350 1200
+F 0 "#PWR6" H 4350 950 50  0001 C CNN
+F 1 "GND" H 4350 1050 50  0000 C CNN
+F 2 "" H 4350 1200 50  0000 C CNN
+F 3 "" H 4350 1200 50  0000 C CNN
+	1    4350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1250 2850 1250
+Wire Wire Line
+	2850 1550 2850 1650
+Wire Wire Line
+	2200 1550 2200 1650
+Wire Wire Line
+	1850 1600 2400 1600
+Connection ~ 2200 1600
+Wire Wire Line
+	2700 1600 2850 1600
+Connection ~ 2850 1600
+Wire Wire Line
+	1850 1950 2850 1950
+Wire Wire Line
+	2350 1200 2350 1250
+Connection ~ 2350 1250
+Wire Wire Line
+	2350 2000 2350 1950
+Connection ~ 2350 1950
+Wire Wire Line
+	1850 1450 1850 1250
+Connection ~ 2200 1250
+Wire Wire Line
+	1850 1750 1850 1950
+Connection ~ 2200 1950
+Wire Wire Line
+	1950 1600 1950 2000
+Connection ~ 1950 1600
+Wire Wire Line
+	2700 2050 2700 1950
+Connection ~ 2700 1950
+Wire Wire Line
+	2750 1200 2750 1250
+Connection ~ 2750 1250
+Wire Wire Line
+	2000 1650 2000 1600
+Connection ~ 2000 1600
+Wire Wire Line
+	3350 1600 3350 1700
+Wire Wire Line
+	3350 2000 3350 2100
+Wire Wire Line
+	3350 2050 4950 2050
+Wire Wire Line
+	3700 2050 3700 2000
+Connection ~ 3350 2050
+Wire Wire Line
+	3350 1650 3900 1650
+Connection ~ 3350 1650
+Wire Wire Line
+	3700 1700 3700 1650
+Connection ~ 3700 1650
+Wire Wire Line
+	4150 2050 4150 2000
+Connection ~ 3700 2050
+Wire Wire Line
+	4150 1300 4150 1200
+Wire Wire Line
+	4150 1200 4350 1200
+$Comp
+L CP1 C?
+U 1 1 58C056C2
+P 4650 1850
+F 0 "C?" H 4675 1950 50  0000 L CNN
+F 1 "22uK" H 4675 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_2225_HandSoldering" H 4650 1850 50  0001 C CNN
+F 3 "" H 4650 1850 50  0000 C CNN
+	1    4650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1650 4950 1650
+Wire Wire Line
+	4650 1650 4650 1700
+Wire Wire Line
+	4650 2050 4650 2000
+Connection ~ 4150 2050
+$Comp
+L C C?
+U 1 1 58C05808
+P 4950 1850
+F 0 "C?" H 4850 1750 50  0000 L CNN
+F 1 "0.1uF" H 4750 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4988 1700 50  0001 C CNN
+F 3 "" H 4950 1850 50  0000 C CNN
+	1    4950 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 1600 4950 1700
+Connection ~ 4650 1650
+Wire Wire Line
+	4950 2050 4950 2000
+Connection ~ 4650 2050
+$Comp
+L +9V #PWR?
+U 1 1 58C05942
+P 4950 1600
+F 0 "#PWR?" H 4950 1450 50  0001 C CNN
+F 1 "+9V" H 4950 1740 50  0000 C CNN
+F 2 "" H 4950 1600 50  0000 C CNN
+F 3 "" H 4950 1600 50  0000 C CNN
+	1    4950 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1650
+$EndSCHEMATC
