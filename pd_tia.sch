@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:all_components
+LIBS:pd_tia-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -296,17 +297,6 @@ F 3 "" H 2150 3900 50  0000 C CNN
 	1    2150 3900
 	-1   0    0    1   
 $EndComp
-$Comp
-L C C8
-U 1 1 58C05EA3
-P 1550 3700
-F 0 "C8" H 1450 3600 50  0000 L CNN
-F 1 "0.1uF" H 1350 3800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1588 3550 50  0001 C CNN
-F 3 "" H 1550 3700 50  0000 C CNN
-	1    1550 3700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1850 1250 2850 1250
 Wire Wire Line
@@ -383,8 +373,6 @@ Connection ~ 4650 2050
 Connection ~ 4950 1650
 Wire Wire Line
 	2150 3750 2150 3900
-Wire Wire Line
-	1550 3850 2150 3850
 Connection ~ 2150 3850
 Wire Wire Line
 	1300 3550 2000 3550
@@ -401,7 +389,6 @@ F 3 "" H 1300 3550 50  0000 C CNN
 	1    1300 3550
 	1    0    0    -1  
 $EndComp
-Connection ~ 1550 3550
 $Comp
 L OPA2211 U3
 U 1 1 58C06481
@@ -451,10 +438,10 @@ F 3 "" H 2650 4050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2350 3450 2350 4050
+	2350 3450 2350 4300
 Connection ~ 2350 3450
 Wire Wire Line
-	3050 3350 3050 4050
+	3050 3350 3050 4300
 Wire Wire Line
 	3000 3350 3150 3350
 $Comp
@@ -469,13 +456,13 @@ F 3 "" H 3800 3950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3550 3250 3550 3950
+	3550 3250 3550 4250
 Wire Wire Line
 	3550 3950 3650 3950
 Wire Wire Line
 	3950 3950 4500 3950
 Wire Wire Line
-	4500 3950 4500 3150
+	4500 3150 4500 4250
 Wire Wire Line
 	4150 3150 4600 3150
 $Comp
@@ -592,7 +579,7 @@ Connection ~ 3050 3350
 Wire Wire Line
 	3450 3350 3550 3350
 Connection ~ 3550 3350
-Text Notes 1400 4350 0    60   ~ 0
+Text Notes 1350 4650 0    60   ~ 0
 TI gain 3.3e3 V/A, Bandwidth approx 3 MHz\nlimited by feedback capacitor
 $Comp
 L R R4
@@ -612,7 +599,7 @@ U 1 1 58C09F5C
 P 5150 3150
 F 0 "P1" H 5160 3270 50  0000 C CNN
 F 1 "BNC" V 5260 3090 50  0000 C CNN
-F 2 "footprints:Dual-BNC-ARF2136" H 5150 3150 50  0001 C CNN
+F 2 "footprints:SMA_throughhole" H 5150 3150 50  0001 C CNN
 F 3 "" H 5150 3150 50  0000 C CNN
 	1    5150 3150
 	1    0    0    -1  
@@ -632,4 +619,38 @@ F 3 "" H 5150 3400 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	5150 3350 5150 3400
+$Comp
+L C C8
+U 1 1 58C6AC99
+P 2650 4300
+F 0 "C8" H 2675 4400 50  0000 L CNN
+F 1 "15pF" H 2675 4200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2688 4150 50  0001 C CNN
+F 3 "" H 2650 4300 50  0000 C CNN
+	1    2650 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C13
+U 1 1 58C6AD21
+P 4000 4250
+F 0 "C13" H 4025 4350 50  0000 L CNN
+F 1 "15pF" H 4025 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4038 4100 50  0001 C CNN
+F 3 "" H 4000 4250 50  0000 C CNN
+	1    4000 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4250 3850 4250
+Connection ~ 3550 3950
+Wire Wire Line
+	4500 4250 4150 4250
+Connection ~ 4500 3950
+Wire Wire Line
+	2350 4300 2500 4300
+Connection ~ 2350 4050
+Wire Wire Line
+	3050 4300 2800 4300
+Connection ~ 3050 4050
 $EndSCHEMATC
